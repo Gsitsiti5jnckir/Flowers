@@ -1,0 +1,82 @@
+
+body{
+    background-color: black;
+    justify-content: center;
+}
+
+span {
+    color: white;
+}
+
+.love > span {
+    animation: glow 0.6s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100% {
+        color: rgba(255, 255, 255, 0.808);
+        text-shadow: 0 0 12px rgb(251, 255, 0), 0 0 50px rgb(251, 255, 0), 0 0 100px rgb(251, 255, 0);
+    }
+    10%, 90% {
+        color: rgba(253, 166, 36, 0.212);
+        text-shadow: none;
+    }
+
+}
+
+
+.love > span:nth-child(2){
+    animation-delay: .4s;
+}
+
+.love > span:nth-child(3){
+    animation-delay: .4s;
+}
+
+.love > span:nth-child(4){
+    animation-delay: .2s;
+}
+
+.love > span:nth-child(5){
+    animation-delay: .4s;
+}
+
+.love > span:nth-child(6){
+    animation-delay: .6s;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.love {
+    font-size: 7rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    background-color: rgb(224, 226, 121);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-color: rgb(231, 159, 100);
+    border-radius: 7px;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
